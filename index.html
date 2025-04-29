@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seweryn Pages</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h1 class="logo">Strona</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section class="hero">
+          <h2>Tworzymy nowoczesne marki</h2>
+          <p>
+            Jesteśmy agencją kreatywną specjalizującą się w designie,
+            technologii i strategii.
+          </p>
+          <button onclick="showToast()">Dowiedz się więcej</button>
+        </section>
+
+        <section class="about">
+          <h3>Kim jesteśmy?</h3>
+          <p>
+            Seweryn pages to zespół projektantów, programistów i strategów,
+            którzy pomagają markom wyróżnić się na rynku poprzez skuteczny
+            design i technologię.
+          </p>
+        </section>
+
+        <section class="services">
+          <h3>Nasze usługi</h3>
+          <div class="service-grid">
+            <div class="card">
+              <h4>Branding</h4>
+              <p>
+                Budujemy spójną tożsamość wizualną, która wyróżnia Twoją markę.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Strony internetowe</h4>
+              <p>
+                Tworzymy nowoczesne, responsywne strony dopasowane do Twoich
+                potrzeb.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Strategia marketingowa</h4>
+              <p>
+                Pomagamy opracować skuteczny plan dotarcia do Twojej grupy
+                docelowej.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <h3>Kontakt</h3>
+          <p>Masz pytania? Skontaktuj się z nami:</p>
+          <form>
+            <input type="text" placeholder="Imię i nazwisko" required />
+            <input type="email" placeholder="Adres e-mail" required />
+            <textarea placeholder="Wiadomość" required></textarea>
+            <button type="submit">Wyślij</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast hidden">Wkrótce więcej informacji!</div>
+
+    <footer class="footer">
+      <p>
+        Seweryn Stalinger &middot; 123719 &middot; Grupa 2 &middot; Semestr
+        2024/2025
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
